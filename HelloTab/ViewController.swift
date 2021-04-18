@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     override func loadView() {
         super.loadView()
         print("loadView")
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +27,7 @@ class ViewController: UIViewController {
             formater.locale = Locale(identifier: "zh-tw")
             lbDisplay.text = formater.string(from: date)
         }
+        print("viewDidLoad")
     }
     
     override func viewWillAppear(_ animated: Bool) {
