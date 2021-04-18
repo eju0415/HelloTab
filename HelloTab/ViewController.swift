@@ -50,8 +50,6 @@ class ViewController: UIViewController {
         print("viewDidDisappear")
     }
     
-    
-
     @IBAction func dateSelected(_ sender: UIDatePicker) {
         let dateSeleted = sender.date
         print(dateSeleted.timeIntervalSince1970)
@@ -65,6 +63,5 @@ class ViewController: UIViewController {
         def.setValue(dateSeleted, forKey: "lastInputDate")
         def.synchronize()
     }
-    
 }
 
